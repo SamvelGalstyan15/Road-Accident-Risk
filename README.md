@@ -9,7 +9,8 @@ An end-to-end Machine Learning pipeline built to predict road accident risk base
 
 ## 📈 Actual vs Predicted
 
-![Actual vs Predicted](actual_vs_predicted.png)
+<img width="599" height="471" alt="image" src="https://github.com/user-attachments/assets/58b8cd4f-252b-423d-8aad-04cdfd6f6631" />
+
 
 ## 🛠️ Installation & Requirements
 
