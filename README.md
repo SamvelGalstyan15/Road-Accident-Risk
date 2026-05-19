@@ -24,7 +24,7 @@ pip install -r requirements.txt
 ### 1. Download Model Weights
 Download the pre-trained model file and place it into the root directory of the project (next to `prediction.py`):
  
-   **[Download road_accident_risk_model.pkl](https://google.com)** (Google Drive)
+   **[Download road_accident_risk_model.pkl](https://drive.google.com/file/d/1jgk24yBp7MnTbAkynA045od26WCBHvP-/view?usp=drive_link)** (Google Drive)
 
 
 ## 🐳 Running with Docker
