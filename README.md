@@ -20,6 +20,28 @@ The project dependencies are managed via `requirements.txt`. To set up the envir
 pip install -r requirements.txt
 ```
 
+
+### 1. Download Model Weights
+Download the pre-trained model file and place it into the root directory of the project (next to `prediction.py`):
+ 
+   **[Download road_accident_risk_model.pkl](https://google.com)** (Google Drive)
+
+
+## 🐳 Running with Docker
+
+### 1. Build the Docker Image
+Run the following command in your terminal inside the project root folder:
+```bash
+docker build -t road-accident-risk .
+```
+
+### 2. Run Predictions
+Execute the container and pass your input data (numbers separated by commas, no spaces) as an argument:
+```bash
+docker run --rm road-accident-risk 3,1,80,0.5
+```
+
+
 ## 🏗️ Pipeline Overview
 1. **Preprocessing:** Vectorized conversion of booleans to `0/1` via `.astype(int)` and One-Hot Encoding for categorical features (`drop_first=True` to prevent multicollinearity).
 2. **Optimization:** 3-fold `GridSearchCV` sweeping 27 configurations across feature scalers, regularization strengths (`alpha`), and learning rates (`eta0`).
